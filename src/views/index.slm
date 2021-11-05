@@ -1,0 +1,43 @@
+= extend('/slm/layouts/default')
+
+= content('main')
+  section class='layout-content px-2 tablet:px-3 pt-8'
+    div class='mx-auto'
+      == this.include('../README.md')
+
+  section class='layout-wrap mx-auto px-2 tablet:px-3 pt-8'
+    div class='text-center mb-3'
+      h2 The Patterns Framework Core Modules
+
+      p These repositores help development teams create and maintain pattern libraries.
+
+    nyco-repo-archive data-archive='core' class='grid tablet:grid-cols-2 gap-3 mb-6'
+
+    div class='text-center mb-3'
+      h2 Pinned Modules
+
+      p These modules provide support for the integration of the patterns framework in developer team projects.
+
+    nyco-repo-archive data-archive='pinned' class='grid tablet:grid-cols-2 gap-3 mb-6'
+
+    div class='text-center mb-3'
+      h2 UI Pattern Components
+
+      p These reusable user interface (UI) components can be reused in different projects.
+
+    nyco-repo-archive data-archive='modules' class='grid tablet:grid-cols-2 gap-3 mb-6'
+
+    div class='text-center mb-3'
+      h2 Pattern Libraries and Projects
+
+      p These sites and libraries have been built using various modules in the NYCO Patterns Framework.
+
+    nyco-repo-archive data-archive='libraries' class='grid tablet:grid-cols-2 gap-3 mb-6'
+
+  section class='layout-content px-2 tablet:px-3 pt-8'
+    div class='mx-auto'
+      h2 Roadmap
+
+      == this.include('../roadmap.md')
+
+= content('scripts')

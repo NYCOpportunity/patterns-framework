@@ -1,0 +1,21 @@
+{
+  "name": "scaffolded-by-the-nyco-patterns-cli",
+  "version": "0.0.0",
+  "description": "The framework is a collection of tools and principles used to make creating pattern libraries fun for developers, transparent for teams, and sustainable beyond the lifecycle of digital products.",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development concurrently \"pttrn -w\" \"pttrn serve -w\" -p \"none\"",
+    "version": "npm run default && git add .",
+    "prepublishOnly": "git push && git push --tags",
+    "publish": "cross-env NODE_ENV=production pttrn publish",
+    "default": "cross-env NODE_ENV=production pttrn"
+  },
+  "devDependencies": {
+    "@nycopportunity/patterns": "^2.6.14",
+    "@nycopportunity/pttrn": "latest",
+    "@nycopportunity/pttrn-scripts": "^1.0.7",
+    "@optoolco/tonic": "^13.3.6",
+    "animate.scss": "0.0.6",
+    "http-proxy-agent": "^5.0.0",
+    "octokit": "^1.7.0"
+  }
+}
