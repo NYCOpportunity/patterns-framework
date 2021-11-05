@@ -2,6 +2,11 @@
   "name": "scaffolded-by-the-nyco-patterns-cli",
   "version": "0.0.0",
   "description": "The framework is a collection of tools and principles used to make creating pattern libraries fun for developers, transparent for teams, and sustainable beyond the lifecycle of digital products.",
+  "license": "GPL-3.0+",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NYCOpportunity/patterns-framework"
+  },
   "scripts": {
     "start": "cross-env NODE_ENV=development concurrently \"pttrn -w\" \"pttrn serve -w\" -p \"none\"",
     "version": "npm run default && git add .",
