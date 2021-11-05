@@ -2,7 +2,7 @@ let slm = require('@nycopportunity/pttrn/config/slm');
 
 let remotes = {
   development: '',
-  production: 'https://nycopportunity.github.io/loves-open-source',
+  production: 'https://nycopportunity.github.io/patterns-framework',
 };
 
 slm.root = remotes[process.env.NODE_ENV];
