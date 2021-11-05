@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link href="https://nycopportunity.github.io/loves-open-source/svg/pttrn-a-perfect-heart-red.svg" rel="icon" type="image/svg+xml" />
+  <title>NYC Opportunity Patterns Framework</title>
+  <meta content="NYC Opportunity Patterns Framework" name="title" />
+  <meta content="The framework is a collection of tools and principles used to make creating pattern libraries fun for developers, transparent for teams, and sustainable beyond the lifecycle of digital products." name="description" />
+  <meta content="website" property="og:type" />
+  <meta content="https://nycopportunity.github.io/loves-open-source" property="og:url" />
+  <meta content="NYC Opportunity Patterns Framework" property="og:title" />
+  <meta content="The framework is a collection of tools and principles used to make creating pattern libraries fun for developers, transparent for teams, and sustainable beyond the lifecycle of digital products." property="og:description" />
+  <meta content="https://nycopportunity.github.io/loves-open-source/img/open-graph.png" property="og:image" />
+  <meta content="summary_large_image" property="twitter:card" />
+  <meta content="https://nycopportunity.github.io/loves-open-source" property="twitter:url" />
+  <meta content="NYC Opportunity Patterns Framework" property="twitter:title" />
+  <meta content="The framework is a collection of tools and principles used to make creating pattern libraries fun for developers, transparent for teams, and sustainable beyond the lifecycle of digital products." property="twitter:description" />
+  <meta content="https://nycopportunity.github.io/loves-open-source/img/open-graph.png" property="twitter:image" />
+  <link href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400;1,700&amp;amp;display=swap" rel="stylesheet" />
+  <link href="https://nycopportunity.github.io/loves-open-source/css/default.css" rel="stylesheet" />
+</head>
+
+<body class="bg-red-30t">
+  <header class="color-mid-background bg-red-30t px-2 tablet:px-3 py-8">
+    <div class="layout-wrap mx-auto text-center py-2">
+      <h1 class="text-navy">
+        <div>
+          <svg aria-hidden="true" class="mb-6" height="127" width="470">
+            <use xlink:href="#pttrn-graphic-patterns-framework"></use>
+          </svg>
+        </div>
+        <div>
+          <svg aria-hidden="true" height="37" width="320">
+            <use xlink:href="#icon-logo-nyco-secondary"></use>
+          </svg>
+        </div>
+        <div class="sr-only">NYC Opportunity</div>
+        <div>Patterns Framework</div>
+      </h1>
+      <p>A front-end framework for creating design pattern libraries.</p>
+    </div>
+  </header>
+  <main class="color-light-background">
+    <section class="layout-content px-2 tablet:px-3 pt-8">
+      <div class="mx-auto">
+        <blockquote>
+          <p>The framework is a collection of tools and principles used to make creating pattern libraries fun for developers, transparent for teams, and sustainable beyond the lifecycle of digital products.</p>
+        </blockquote>
+        <h3 id="why-patterns">Why Patterns?</h3>
+        <p>
+          <strong>Pattern libraries unify the experience of user interfaces because they can be integrated into different service delivery channels</strong>. The public does not perceive the parts that make up digital government services as distinct products the way civil servants do. Websites, forms, mobile apps, dashboards, email newsletters, etc. are often perceived as a single entity. The more consistent these are from a user interface (UI) and user experience (UX) perspective the better the service delivery will be for end-users.
+        </p>
+        <p>
+          <strong>They reduce the amount of work that is required by designers and developers to implement new services</strong>. By using patterns we can strive toward “making the right thing to do the easiest thing to do.” We can use tools that help developers become better at writing error free code, ensure the team adheres to accessibility standards, and create UIs that have been proven to work <strong>and</strong> can adapt to the changing times.
+        </p>
+        <p>
+          <strong>They create a common and accessible language for the organization to approach digital service delivery</strong>. “Language is fundamental to collaboration. If you work in a team, your design language needs to be shared among the people involved in the creation of the product. Without a shared language, a group of people can’t create effectively together – each person will have a different mental model of what they’re trying to achieve.” - <a href="https://www.smashingmagazine.com/design-systems-book/">
+            <strong>Design Systems</strong>
+          </a> by Alla Kholmatova.
+        </p>
+        <h3 id="principles">Principles</h3>
+        <p>
+          <a href="https://atomicdesign.bradfrost.com/">Atomic Design</a> and <a href="https://tailwindcss.com/docs/utility-first">Utility-first</a> - A pattern library starts with simple <a href="https://www.lightningdesignsystem.com/design-tokens/">design tokens</a> such as color, typographic features, and spacing values then scales up from there. Design tokens are used to build out more complex components, scripts, and utilities that retain modularity.
+        </p>
+        <p>
+          <strong>Framework Agnostic</strong> - Use <a href="https://reactjs.org">React</a>, <a href="https://svelte.dev">Svelte</a>, or <a href="https://vuejs.org">Vue.js</a> to add reactivity to user interface components. Manage your own copy of <a href="https://getbootstrap.com">Bootstrap</a>, <a href="https://mui.com">Material UI</a>, <a href="https://get.foundation/">Foundation</a>, or any of the many component libraries of choice.
+        </p>
+        <p>
+          <strong>Modular Distribution and Portability</strong> - Make it once, use it many times. Instead of copying and pasting CSS and JavaScript into multiple projects, reuse and extend pattern libraries with a modern front-end ecosystem such as <a href="https://www.npmjs.com">NPM</a> and distribute via content-delivery-network.
+        </p>
+        <h3 id="getting-started">Getting Started</h3>
+        <p>Scaffold your own library or project by running the following command.</p>
+        <pre><code class="language-shell">pre npx @nycopportunity/pttrn scaffold &amp;&amp; npm install &amp;&amp; NODE_ENV=development pttrn &amp;&amp; npm start
+</code></pre>
+        <p>This will install the <a href="https://github.com/cityofnewyork/patterns-cli">Patterns Command Line Interface</a> described below, scaffold a new static library project, and start the development server.</p>
+        <h4 id="but-i-dont-write-code">But I don’t write code!</h4>
+        <p>No worries! Then perhaps try documenting your pattern library specs in a <a href="https://www.figma.com/design-systems/">Figma</a> design file first and share this with your development team.</p>
+        <!-- The [Mayor's Office for Economic Opportunity](http://nyc.gov/opportunity) (NYC Opportunity) supports and promotes open-source software development. This repository contains our open–source policy and a list of public repositories on GitHub, including public-facing digital products and packages used by our products. Feel free to ask questions and share feedback. **Interested in contributing?** See our open positions on [buildwithnyc.github.io](http://buildwithnyc.github.io/). For details on maintaining this site refer to the [contributing guide](https://github.com/NYCOpportunity/loves-open-source/blob/main/contributing.md). -->
+      </div>
+    </section>
+    <section class="layout-wrap mx-auto px-2 tablet:px-3 pt-8">
+      <div class="text-center mb-3">
+        <h2>The Patterns Framework Core Modules</h2>
+        <p>These repositores help development teams create and maintain pattern libraries.</p>
+      </div>
+      <nyco-repo-archive class="grid tablet:grid-cols-2 gap-3 mb-6" data-archive="core"></nyco-repo-archive>
+      <div class="text-center mb-3">
+        <h2>Pinned Modules</h2>
+        <p>These modules provide support for the integration of the patterns framework in developer team projects.</p>
+      </div>
+      <nyco-repo-archive class="grid tablet:grid-cols-2 gap-3 mb-6" data-archive="pinned"></nyco-repo-archive>
+      <div class="text-center mb-3">
+        <h2>UI Pattern Components</h2>
+        <p>These reusable user interface (UI) components can be reused in different projects.</p>
+      </div>
+      <nyco-repo-archive class="grid tablet:grid-cols-2 gap-3 mb-6" data-archive="modules"></nyco-repo-archive>
+      <div class="text-center mb-3">
+        <h2>Pattern Libraries and Projects</h2>
+        <p>These sites and libraries have been built using various modules in the NYCO Patterns Framework.</p>
+      </div>
+      <nyco-repo-archive class="grid tablet:grid-cols-2 gap-3 mb-6" data-archive="libraries"></nyco-repo-archive>
+    </section>
+    <section class="layout-content px-2 tablet:px-3 pt-8">
+      <div class="mx-auto">
+        <h2>Roadmap</h2>
+        <p>New Pattern Module Specification (use CSS custom properties and deprecate slm-lang).</p>
+        <p>Refine Module Accessibility. Work with MOPD to document and address module issues.</p>
+        <p>
+          <strong>Elements</strong>; one package with all of the elements. Can be customized by CSS Custom Properties / Design Tokens for a particular product.
+        </p>
+        <p>
+          <mark class="badge">Complete</mark>
+          <a href="https://www.figma.com/file/jpvfMN4UETOvjQG9EJoH4n/Patterns-Architecture?node-id=0%3A1">Draft architecture</a> for additional shared pattern modules.
+        </p>
+        <p>
+          <mark class="badge">Complete</mark> Release <a href="https://github.com/NYCOpportunity/pattern-navigation">Navigation Pattern</a>
+        </p>
+        <p>
+          <mark class="badge">Complete</mark> Release <a href="https://github.com/NYCOpportunity/pattern-modal">Modal Pattern</a>
+        </p>
+        <p>
+          <mark class="badge">Complete</mark> Release <a href="https://github.com/NYCOpportunity/pattern-menu">Menu Pattern</a>
+        </p>
+        <p>
+          <mark class="badge">Complete</mark> Release <a href="https://github.com/NYCOpportunity/pattern-attribution">Attribution Pattern</a>
+        </p>
+        <p>
+          <mark class="badge">In-progress</mark> Move to releasing shared pattern modules.
+        </p>
+        <p>
+          <mark class="badge">Complete</mark> Release <a href="https://github.com/CityOfNewYork/patterns-cli/releases/tag/v1.0.0">v1 of the Patterns CLI</a>
+        </p>
+      </div>
+    </section>
+    <div class="mx-auto text-center py-8">
+      <p>Last updated November 5, 2021</p>
+    </div>
+  </main>
+  <footer class="o-footer color-dark-background border-navy-70t">
+    <div class="layout-wrap mx-auto">
+      <div class="o-footer__divider border-navy-70t desktop:flex desktop:layout-sidebar mb-4">
+        <div class="pb-4">
+          <a class="block" href="http://nyc.gov/opportunity" title="">
+            <svg aria-hidden="true" class="o-footer__logo">
+              <use xlink:href="#icon-logo-secondary"></use>
+            </svg>
+            <span class="sr-only">The Mayor's Office for Economic Opportunity</span>
+          </a>
+        </div>
+        <div class="pb-4 desktop:pl-4 desktop:flex justify-end items-center">
+          <nav class="o-footer__inline-nav">
+            <a href="https://buildwithnyc.github.io">Jobs & Careers</a>
+            <a href="https://github.com/NYCOpportunity/pattern-framework">GitHub Repository</a>
+          </nav>
+        </div>
+      </div>
+      <div class="desktop:grid desktop:grid-cols-2">
+        <div>
+          <p>NYC Opportunity is the <a href='http://nyc.gov/opportunity'>New York City Mayor's Office for Economic Opportunity</a>. We are committed to sharing open source software that we use in our products. Feel free to ask questions and share feedback. Follow @nycopportunity on&nbsp;<a href='https://twitter.com/NYCOpportunity' target='_blank' rel='nofollow noopener'>Twitter</a>,&nbsp;<a href='https://www.facebook.com/NYCOpportunity' target='_blank' rel='nofollow noopener'>Facebook</a>,&nbsp;<a href='https://medium.com/@nycopportunity' target='_blank' rel='nofollow noopener'>Medium</a>,&nbsp;<a href='https://github.com/NYCOpportunity' target='_blank' rel='nofollow noopener'>github.com/NYCOpportunity</a>, and on&nbsp;<a href='https://github.com/orgs/CityOfNewYork/teams/nycopportunity' target='_blank' rel='nofollow noopener' title='Viewable by @CityOfNewYork members.'>github.com/CityOfNewYork</a>.</p>
+        </div>
+        <div class="desktop:text-end">
+          <small>© City of New York, 2021 All Rights Reserved.
+            <br>NYC is a trademark and service mark of the City of New York.
+          </small>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://nycopportunity.github.io/loves-open-source/js/default.js"></script>
+</body>
+
+</html>
