@@ -31,8 +31,6 @@ class NycoRepoArchive extends Tonic {
   async * render() {
     yield this.html`<p>Loading Repositories...</p>`;
 
-    console.dir(this);
-
     const repositories = await this.get(this.dataset.archive);
 
     let list = [];
