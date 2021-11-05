@@ -11,7 +11,7 @@
     "start": "cross-env NODE_ENV=development concurrently \"pttrn -w\" \"pttrn serve -w\" -p \"none\"",
     "version": "npm run default && git add .",
     "prepublishOnly": "git push && git push --tags",
-    "ghpages": "cross-env NODE_ENV=production pttrn publish",
+    "ghpages": "npm run default && cross-env NODE_ENV=production pttrn publish",
     "default": "cross-env NODE_ENV=production pttrn"
   },
   "devDependencies": {
