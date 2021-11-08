@@ -5,8 +5,7 @@ html lang='en'
     meta http-equiv='X-UA-Compatible' content='IE=edge'
     meta name='viewport' content='width=device-width, initial-scale=1'
 
-    link rel='icon' type='image/svg+xml' href='${this.root}/svg/pttrn-a-perfect-heart-red.svg'
-    / link rel='icon' type='image/svg+xml' href='${this.root}/img/favicon/favicon.svg'
+    link rel='icon' type='image/svg+xml' href='${this.root}/svg/pttrn-favicon.svg'
 
     - let title = 'NYC Opportunity Patterns Framework';
     - let description = 'The framework is a collection of tools and principles used to make creating pattern libraries fun for developers, transparent for teams, and sustainable beyond the lifecycle of digital products.'
