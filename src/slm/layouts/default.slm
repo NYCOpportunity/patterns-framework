@@ -33,38 +33,23 @@ html lang='en'
     link href='https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap' rel='stylesheet'
     link href='${this.root}/css/default.css' rel='stylesheet'
 
-    / link rel='stylesheet' href='https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/styles/default.min.css'
-    / script src='//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js'
-
-    / javascript:
-    /   document.addEventListener('DOMContentLoaded', function(event) {
-    /     hljs.configure({
-    /       languages: ['html', 'javascript', 'css', 'sass']
-    /     });
-
-    /     document.querySelectorAll('pre')
-    /       .forEach(function(pre) {
-    /         pre.setAttribute('tabindex', '0');
-
-    /         hljs.highlightBlock(pre);
-    /       });
-    /   });
-
   body class='bg-red-30t'
     header class='color-mid-background bg-red-30t px-2 tablet:px-3 py-8'
       div class='layout-wrap mx-auto text-center py-2'
-        h1 class='text-navy'
-          div
-            svg width='470' height='127' aria-hidden='true' class='mb-6'
-              use xlink:href='#pttrn-graphic-patterns-framework'
+        svg width='470' height='127' aria-hidden='true' class='icon' role='img'
+          title The NYCO Patterns Framework graphic featuring symbols for elements, components, and objects.
+          use xlink:href='#pttrn-graphic-patterns-framework'
 
+        h1 class='text-navy mb-4'
           div
-            svg width='320' height='37' aria-hidden='true'
+            svg width='320' height='37' aria-hidden='true' class='icon mb-4'
               use xlink:href='#icon-logo-nyco-secondary'
 
           div class='sr-only' = 'NYC Opportunity'
 
-          div = 'Patterns Framework'
+          div
+            = 'User Interface (UI)'
+            br Patterns Framework
 
         p A front-end framework for creating design pattern libraries.
 
@@ -90,8 +75,8 @@ html lang='en'
 
           div class='pb-4 desktop:pl-4 desktop:flex justify-end items-center'
             nav class='o-footer__inline-nav'
-              a href='https://buildwithnyc.github.io' Jobs & Careers
-              a href='https://github.com/NYCOpportunity/pattern-framework' GitHub Repository
+              a href='https://github.com/CityOfNewYork/patterns-cli' Patterns CLI
+              a href='https://github.com/NYCOpportunity/pattern-framework' Patterns Framework Repository
 
         div class='desktop:grid desktop:grid-cols-2'
           div
