@@ -7,7 +7,7 @@ html lang='en'
 
     link rel='icon' type='image/svg+xml' href='${this.root}/svg/pttrn-favicon.svg'
 
-    - let title = 'NYC Opportunity Patterns Framework';
+    - let title = 'NYC Opportunity UI Patterns Framework';
     - let description = 'The framework is a collection of tools and principles used to make creating pattern libraries fun for developers, transparent for teams, and sustainable beyond the lifecycle of digital products.'
     - let url = this.root;
     - let image = `${this.root}/img/open-graph.png`

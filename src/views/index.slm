@@ -23,7 +23,7 @@
     div class='text-center mb-3'
       h2 UI Pattern Components
 
-      p These reusable user interface (UI) components can be reused in different projects.
+      p These reusable user interface (UI) components can be implemented in different projects.
 
     nyco-repo-archive data-archive='modules' class='grid tablet:grid-cols-2 gap-3 mb-6'
 
