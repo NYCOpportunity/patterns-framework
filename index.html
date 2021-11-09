@@ -6,17 +6,17 @@
   <meta content="IE=edge" http-equiv="X-UA-Compatible" />
   <meta content="width=device-width, initial-scale=1" name="viewport" />
   <link href="https://nycopportunity.github.io/patterns-framework/svg/pttrn-favicon.svg" rel="icon" type="image/svg+xml" />
-  <title>NYC Opportunity Patterns Framework</title>
-  <meta content="NYC Opportunity Patterns Framework" name="title" />
+  <title>NYC Opportunity UI Patterns Framework</title>
+  <meta content="NYC Opportunity UI Patterns Framework" name="title" />
   <meta content="The framework is a collection of tools and principles used to make creating pattern libraries fun for developers, transparent for teams, and sustainable beyond the lifecycle of digital products." name="description" />
   <meta content="website" property="og:type" />
   <meta content="https://nycopportunity.github.io/patterns-framework" property="og:url" />
-  <meta content="NYC Opportunity Patterns Framework" property="og:title" />
+  <meta content="NYC Opportunity UI Patterns Framework" property="og:title" />
   <meta content="The framework is a collection of tools and principles used to make creating pattern libraries fun for developers, transparent for teams, and sustainable beyond the lifecycle of digital products." property="og:description" />
   <meta content="https://nycopportunity.github.io/patterns-framework/img/open-graph.png" property="og:image" />
   <meta content="summary_large_image" property="twitter:card" />
   <meta content="https://nycopportunity.github.io/patterns-framework" property="twitter:url" />
-  <meta content="NYC Opportunity Patterns Framework" property="twitter:title" />
+  <meta content="NYC Opportunity UI Patterns Framework" property="twitter:title" />
   <meta content="The framework is a collection of tools and principles used to make creating pattern libraries fun for developers, transparent for teams, and sustainable beyond the lifecycle of digital products." property="twitter:description" />
   <meta content="https://nycopportunity.github.io/patterns-framework/img/open-graph.png" property="twitter:image" />
   <link href="https://fonts.gstatic.com" rel="preconnect" />
@@ -48,24 +48,44 @@
   <main class="color-light-background">
     <section class="layout-content px-2 tablet:px-3 pt-8">
       <div class="mx-auto">
-        <blockquote>
+        <blockquote class="mb-8">
           <p>The framework is a collection of tools and principles used to make creating pattern libraries fun for developers, transparent for teams, and sustainable beyond the lifecycle of digital products.</p>
         </blockquote>
-        <h3 id="why-patterns">Why Patterns?</h3>
-        <p>
-          <strong>Pattern libraries unify the experience of user interfaces because they can be integrated into different service delivery channels</strong>. The public does not perceive the parts that make up digital government services as distinct products the way civil servants do. Websites, forms, mobile apps, dashboards, email newsletters, etc. are often perceived as a single entity. The more consistent these are from a user interface (UI) and user experience (UX) perspective the better the service delivery will be for end-users.
-        </p>
-        <p>
-          <strong>They reduce the amount of work that is required by designers and developers to implement new services</strong>. By using patterns we can strive toward “making the right thing to do the easiest thing to do.” We can use tools that help developers become better at writing error free code, ensure the team adheres to accessibility standards, and create UIs that have been proven to work <strong>and</strong> can adapt to the changing times.
-        </p>
-        <p>
-          <strong>They create a common and accessible language for the organization to approach digital service delivery</strong>. “Language is fundamental to collaboration. If you work in a team, your design language needs to be shared among the people involved in the creation of the product. Without a shared language, a group of people can’t create effectively together – each person will have a different mental model of what they’re trying to achieve.” - <a href="https://www.smashingmagazine.com/design-systems-book/">
+        <!-- > The framework is a collection of tools and principles used to make creating pattern libraries fun for developers, transparent for teams, and sustainable beyond the lifecycle of digital products. -->
+        <h2 id="why-patterns">Why Patterns?</h2>
+        <div class="shadow-up">
+          <div class="color-primary-background border-navy p-4 h4 mb-3">
+            <p>
+              <strong>Pattern libraries unify the experience of user interfaces because they can be integrated into different service delivery channels.</strong>
+            </p>
+          </div>
+        </div>
+        <p>The public does not perceive the parts that make up digital government services as distinct products the way civil servants do. Websites, forms, mobile apps, dashboards, email newsletters, etc. are often perceived as a single entity. The more consistent these are from a user interface (UI) and user experience (UX) perspective the better the service delivery will be for end-users.</p>
+        <div class="shadow-up">
+          <div class="color-primary-background border-navy p-4 h4 mb-3 mt-6">
+            <p>
+              <strong>They reduce the amount of work that is required by designers and developers to implement new services</strong>.
+            </p>
+          </div>
+        </div>
+        <p>By using patterns we can strive toward “making the right thing to do the easiest thing to do.” We can use tools that help developers become better at writing error free code, ensure the team adheres to accessibility standards, and create UIs that have been proven to work <strong>and</strong> can adapt to the changing times.</p>
+        <div class="shadow-up">
+          <div class="color-primary-background border-navy p-4 h4 mb-3 mt-6">
+            <p>
+              <strong>They create a common and accessible language for the organization to approach digital service delivery</strong>.
+            </p>
+          </div>
+        </div>
+        <p>“Language is fundamental to collaboration. If you work in a team, your design language needs to be shared among the people involved in the creation of the product. Without a shared language, a group of people can’t create effectively together – each person will have a different mental model of what they’re trying to achieve.” - <a href="https://www.smashingmagazine.com/design-systems-book">
             <strong>Design Systems</strong>
-          </a> by Alla Kholmatova.
+          </a>
+          <em>by Alla Kholmatova</em>.
         </p>
-        <h3 id="principles">Principles</h3>
+        <h2 id="principles">Principles</h2>
         <p>
-          <a href="https://atomicdesign.bradfrost.com/">Atomic Design</a> and <a href="https://tailwindcss.com/docs/utility-first">Utility-first</a> - A pattern library starts with simple <a href="https://www.lightningdesignsystem.com/design-tokens/">design tokens</a> such as color, typographic features, and spacing values then scales up from there. Design tokens are used to build out more complex components, scripts, and utilities that retain modularity.
+          <strong>
+            <a href="https://atomicdesign.bradfrost.com/">Atomic Design</a> and <a href="https://tailwindcss.com/docs/utility-first">Utility-first</a>
+          </strong> - A pattern library starts with simple <a href="https://www.lightningdesignsystem.com/design-tokens/">design tokens</a> such as color, typographic features, and spacing values then scales up from there. Design tokens are used to build out more complex components, scripts, and utilities that retain modularity.
         </p>
         <p>
           <strong>Framework Agnostic</strong> - Use <a href="https://reactjs.org">React</a>, <a href="https://svelte.dev">Svelte</a>, or <a href="https://vuejs.org">Vue.js</a> to add reactivity to user interface components. Manage your own copy of <a href="https://getbootstrap.com">Bootstrap</a>, <a href="https://mui.com">Material UI</a>, <a href="https://get.foundation/">Foundation</a>, or any of the many component libraries of choice.
@@ -73,14 +93,13 @@
         <p>
           <strong>Modular Distribution and Portability</strong> - Make it once, use it many times. Instead of copying and pasting CSS and JavaScript into multiple projects, reuse and extend pattern libraries with a modern front-end ecosystem such as <a href="https://www.npmjs.com">NPM</a> and distribute via content-delivery-network.
         </p>
-        <h3 id="getting-started">Getting Started</h3>
+        <h2 id="getting-started">Getting Started</h2>
         <p>Scaffold your own library or project by running the following command.</p>
-        <pre><code class="language-shell">pre npx @nycopportunity/pttrn scaffold &amp;&amp; npm install &amp;&amp; NODE_ENV=development pttrn &amp;&amp; npm start
+        <pre><code class="language-shell">npx @nycopportunity/pttrn scaffold &amp;&amp; npm install &amp;&amp; NODE_ENV=development pttrn &amp;&amp; npm start
 </code></pre>
         <p>This will install the <a href="https://github.com/cityofnewyork/patterns-cli">Patterns Command Line Interface</a> described below, scaffold a new static library project, and start the development server.</p>
-        <h4 id="but-i-dont-write-code">But I don’t write code!</h4>
+        <h3 id="but-i-dont-write-code">But I don’t write code!</h3>
         <p>No worries! Then perhaps try documenting your pattern library specs in a <a href="https://www.figma.com/design-systems/">Figma</a> design file first and share this with your development team.</p>
-        <!-- The [Mayor's Office for Economic Opportunity](http://nyc.gov/opportunity) (NYC Opportunity) supports and promotes open-source software development. This repository contains our open–source policy and a list of public repositories on GitHub, including public-facing digital products and packages used by our products. Feel free to ask questions and share feedback. **Interested in contributing?** See our open positions on [buildwithnyc.github.io](http://buildwithnyc.github.io/). For details on maintaining this site refer to the [contributing guide](https://github.com/NYCOpportunity/loves-open-source/blob/main/contributing.md). -->
       </div>
     </section>
     <section class="layout-wrap mx-auto px-2 tablet:px-3 pt-8">
@@ -96,7 +115,7 @@
       <nyco-repo-archive class="grid tablet:grid-cols-2 gap-3 mb-6" data-archive="pinned"></nyco-repo-archive>
       <div class="text-center mb-3">
         <h2>UI Pattern Components</h2>
-        <p>These reusable user interface (UI) components can be reused in different projects.</p>
+        <p>These reusable user interface (UI) components can be implemented in different projects.</p>
       </div>
       <nyco-repo-archive class="grid tablet:grid-cols-2 gap-3 mb-6" data-archive="modules"></nyco-repo-archive>
       <div class="text-center mb-3">
@@ -130,15 +149,15 @@
           <mark class="badge">Complete</mark> Release <a href="https://github.com/NYCOpportunity/pattern-attribution">Attribution Pattern</a>
         </p>
         <p>
-          <mark class="badge">In-progress</mark> Move to releasing shared pattern modules.
+          <mark class="badge">In-progress</mark> Move to releasing shared pattern modules. Continue to support integrations and contributions.
         </p>
         <p>
-          <mark class="badge">Complete</mark> Release <a href="https://github.com/CityOfNewYork/patterns-cli/releases/tag/v1.0.0">v1 of the Patterns CLI</a>
+          <mark class="badge">Complete</mark> Release <a href="https://github.com/CityOfNewYork/patterns-cli/releases/tag/v1.0.0">v1 of the Patterns CLI</a>. v1 culminated a long effort to standardize the way our pattern libraries were created. We went from desperate NPM scripts and configurations to a standard set of packages and tools for building and maintaining patterns for different products and audiences. This development period was a heavy focus on developer tooling and support while also beginning to involve designers in the process of contributing.
         </p>
       </div>
     </section>
     <div class="mx-auto text-center py-8">
-      <p>Last updated November 8, 2021</p>
+      <p>Last updated November 9, 2021</p>
     </div>
   </main>
   <footer class="o-footer color-dark-background border-navy-70t">
