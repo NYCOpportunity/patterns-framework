@@ -17,16 +17,20 @@ let LISTS = {
   'pinned': [
     'patterns-demo',
     'patterns-test',
-    'patterns-plugin-feather',
-    'patterns-plugin-twig',
     'patterns-angular',
     'patterns-create-react-app'
+  ],
+  'plugins': [
+    'patterns-plugin-properties',
+    'patterns-plugin-feather',
+    'patterns-plugin-twig'
   ],
   'modules': [
     'pattern-modal',
     'pattern-navigation',
     'pattern-menu',
-    'pattern-attribution'
+    'pattern-attribution',
+    'pattern-elements'
   ],
   'libraries': [
     'working-nyc-patterns',

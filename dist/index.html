@@ -5,23 +5,23 @@
   <meta charset="utf-8" />
   <meta content="IE=edge" http-equiv="X-UA-Compatible" />
   <meta content="width=device-width, initial-scale=1" name="viewport" />
-  <link href="https://nycopportunity.github.io/patterns-framework/svg/pttrn-favicon.svg" rel="icon" type="image/svg+xml" />
+  <link href="/svg/pttrn-favicon.svg" rel="icon" type="image/svg+xml" />
   <title>NYC Opportunity UI Patterns Framework</title>
   <meta content="NYC Opportunity UI Patterns Framework" name="title" />
   <meta content="The framework is a collection of tools and principles used to make creating pattern libraries fun for developers, transparent for teams, and sustainable beyond the lifecycle of digital products." name="description" />
   <meta content="website" property="og:type" />
-  <meta content="https://nycopportunity.github.io/patterns-framework" property="og:url" />
+  <meta content="" property="og:url" />
   <meta content="NYC Opportunity UI Patterns Framework" property="og:title" />
   <meta content="The framework is a collection of tools and principles used to make creating pattern libraries fun for developers, transparent for teams, and sustainable beyond the lifecycle of digital products." property="og:description" />
-  <meta content="https://nycopportunity.github.io/patterns-framework/img/open-graph.png" property="og:image" />
+  <meta content="/img/open-graph.png" property="og:image" />
   <meta content="summary_large_image" property="twitter:card" />
-  <meta content="https://nycopportunity.github.io/patterns-framework" property="twitter:url" />
+  <meta content="" property="twitter:url" />
   <meta content="NYC Opportunity UI Patterns Framework" property="twitter:title" />
   <meta content="The framework is a collection of tools and principles used to make creating pattern libraries fun for developers, transparent for teams, and sustainable beyond the lifecycle of digital products." property="twitter:description" />
-  <meta content="https://nycopportunity.github.io/patterns-framework/img/open-graph.png" property="twitter:image" />
+  <meta content="/img/open-graph.png" property="twitter:image" />
   <link href="https://fonts.gstatic.com" rel="preconnect" />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400;1,700&amp;amp;display=swap" rel="stylesheet" />
-  <link href="https://nycopportunity.github.io/patterns-framework/css/default.css" rel="stylesheet" />
+  <link href="/css/default.css" rel="stylesheet" />
 </head>
 
 <body class="bg-red-30t">
@@ -46,7 +46,16 @@
     </div>
   </header>
   <main class="color-light-background">
-    <section class="layout-content px-2 tablet:px-3 pt-8">
+    <nav class="sticky top-0 p-2 bg-white text-center z-10">
+      <a class="mx-1" href="#readme">Readme</a>
+      <a class="mx-1" href="#core">Core Modules</a>
+      <a class="mx-1" href="#pinned">Pinned Modules</a>
+      <a class="mx-1" href="#plugins">Plugins</a>
+      <a class="mx-1" href="#components">Components</a>
+      <a class="mx-1" href="#projects">Projects</a>
+      <a class="mx-1" href="#roadmap">Roadmap</a>
+    </nav>
+    <section class="layout-content px-2 tablet:px-3 pt-8" id="readme">
       <div class="mx-auto">
         <blockquote class="mb-8">
           <p>The framework is a collection of tools and principles used to make creating pattern libraries fun for developers, transparent for teams, and sustainable beyond the lifecycle of digital products.</p>
@@ -95,69 +104,116 @@
         </p>
         <h2 id="getting-started">Getting Started</h2>
         <p>Scaffold your own library or project by running the following command.</p>
-        <pre><code class="language-shell">npx @nycopportunity/pttrn scaffold &amp;&amp; npm install &amp;&amp; NODE_ENV=development pttrn &amp;&amp; npm start
+        <pre><code class="language-shell">npx @nycopportunity/pttrn scaffold &amp;&amp; npm i &amp;&amp; npx pttrn build &amp;&amp; npm start
 </code></pre>
         <p>This will install the <a href="https://github.com/cityofnewyork/patterns-cli">Patterns Command Line Interface</a> described below, scaffold a new static library project, and start the development server.</p>
         <h3 id="but-i-dont-write-code">But I don’t write code!</h3>
         <p>No worries! Then perhaps try documenting your pattern library specs in a <a href="https://www.figma.com/design-systems/">Figma</a> design file first and share this with your development team.</p>
       </div>
     </section>
-    <section class="layout-wrap mx-auto px-2 tablet:px-3 pt-8">
+    <section class="layout-wrap mx-auto px-2 tablet:px-3 pt-8" id="core">
       <div class="text-center mb-3">
         <h2>The Patterns Framework Core Modules</h2>
         <p>These repositores help development teams create and maintain pattern libraries.</p>
       </div>
       <nyco-repo-archive class="grid tablet:grid-cols-2 gap-3 mb-6" data-archive="core"></nyco-repo-archive>
-      <div class="text-center mb-3">
+      <div class="text-center mb-3 pt-8" id="pinned">
         <h2>Pinned Modules</h2>
         <p>These modules provide support for the integration of the patterns framework in developer team projects.</p>
       </div>
       <nyco-repo-archive class="grid tablet:grid-cols-2 gap-3 mb-6" data-archive="pinned"></nyco-repo-archive>
-      <div class="text-center mb-3">
+      <div class="text-center mb-3 pt-8" id="plugins">
+        <h2>Patterns CLI Plugins</h2>
+        <p>These modules extend the functionality of the <a target='_blank' href='https://github.com/CityOfNewYork/patterns-cli#custom-commands'>Patterns CLI via the custom commands API</a>.</p>
+      </div>
+      <nyco-repo-archive class="grid tablet:grid-cols-2 gap-3 mb-6" data-archive="plugins"></nyco-repo-archive>
+      <div class="text-center mb-3 pt-8" id="components">
         <h2>UI Pattern Components</h2>
         <p>These reusable user interface (UI) components can be implemented in different projects.</p>
       </div>
       <nyco-repo-archive class="grid tablet:grid-cols-2 gap-3 mb-6" data-archive="modules"></nyco-repo-archive>
-      <div class="text-center mb-3">
+      <div class="text-center mb-3 pt-8" id="projects">
         <h2>Pattern Libraries and Projects</h2>
         <p>These sites and libraries have been built using various modules in the NYCO Patterns Framework.</p>
       </div>
       <nyco-repo-archive class="grid tablet:grid-cols-2 gap-3 mb-6" data-archive="libraries"></nyco-repo-archive>
     </section>
-    <section class="layout-content px-2 tablet:px-3 pt-8">
+    <section class="layout-content px-2 tablet:px-3 pt-8" id="roadmap">
       <div class="mx-auto">
         <h2>Roadmap</h2>
-        <p>New Pattern Module Specification (use CSS custom properties and deprecate slm-lang).</p>
-        <p>Refine Module Accessibility. Work with MOPD to document and address module issues.</p>
-        <p>
-          <strong>Elements</strong>; one package with all of the elements. Can be customized by CSS Custom Properties / Design Tokens for a particular product.
+        <h3 id="2022">2022</h3>
+        <p class="flex items-center justify-between border-b border-t py-2 border-grey-20t mb-0">
+          <span>Follow design token specification/standards determined by the <a target="_blank" href="https://github.com/design-tokens/community-group">Design Tokens W3C Community Group</a>.</span>
+          <mark class="badge mis-2 flex-shrink-0">TBD</mark>
         </p>
-        <p>
-          <mark class="badge">Complete</mark>
-          <a href="https://www.figma.com/file/jpvfMN4UETOvjQG9EJoH4n/Patterns-Architecture?node-id=0%3A1">Draft architecture</a> for additional shared pattern modules.
+        <p class="flex items-center justify-between border-b py-2 border-grey-20t mb-0">
+          <span>Create Pug.js Pattern CLI plugin to replace slm-lang.</span>
+          <mark class="badge mis-2 flex-shrink-0">TBD</mark>
         </p>
-        <p>
-          <mark class="badge">Complete</mark> Release <a href="https://github.com/NYCOpportunity/pattern-navigation">Navigation Pattern</a>
+        <p class="flex items-center justify-between border-b py-2 border-grey-20t mb-0">
+          <span>Explore <a target="_blank" href="https://github.com/builderio/mitosis">Mitosis</a> as shared component specification.</span>
+          <mark class="badge mis-2 flex-shrink-0">TBD</mark>
         </p>
-        <p>
-          <mark class="badge">Complete</mark> Release <a href="https://github.com/NYCOpportunity/pattern-modal">Modal Pattern</a>
+        <p class="flex items-center justify-between border-b py-2 border-grey-20t mb-0">
+          <span>Update <a target="_blank" href="https://github.com/CityOfNewYork/ACCESS-NYC-PATTERNS">ACCESS NYC Patterns</a> with v1 of the Patterns Framework (CLI, Scripts, etc.).</span>
+          <mark class="badge mis-2 flex-shrink-0 bg-blue-20t text-blue">In-progress</mark>
         </p>
-        <p>
-          <mark class="badge">Complete</mark> Release <a href="https://github.com/NYCOpportunity/pattern-menu">Menu Pattern</a>
+        <p class="flex items-center justify-between border-b py-2 border-grey-20t mb-0">
+          <span>
+            <a target="_blank" href="https://github.com/NYCOpportunity/pattern-elements">Elements</a>; one repository with all of the elements. Can be customized by CSS Custom Properties / Design Tokens for a particular product.
+          </span>
+          <mark class="badge mis-2 flex-shrink-0 bg-blue-20t text-blue">In-progress</mark>
         </p>
-        <p>
-          <mark class="badge">Complete</mark> Release <a href="https://github.com/NYCOpportunity/pattern-attribution">Attribution Pattern</a>
+        <h3 id="2021">2021</h3>
+        <p class="flex items-center justify-between border-b border-t py-2 border-grey-20t mb-0">
+          <span>
+            <a target="_blank" href="https://github.com/CityOfNewYork/working-nyc-patterns">Working NYC Patterns</a> light/dark mode proof-of-concept and low-vision color scheme release (<a target="_blank" href="https://github.com/CityOfNewYork/working-nyc/releases/tag/v1.7.0">notes</a>).
+          </span>
+          <mark class="badge mis-2 flex-shrink-0 bg-green-30t text-green">Complete</mark>
         </p>
-        <p>
-          <mark class="badge">In-progress</mark> Move to releasing shared pattern modules. Continue to support integrations and contributions.
+        <p class="flex items-center justify-between border-b py-2 border-grey-20t mb-0">
+          <span>Release <a target="_blank" href="https://github.com/NYCOpportunity/patterns-plugin-properties">Patterns CLI Properties Plugin</a>. Converts Design tokens managed by the Patterns CLI into CSS custom properties. Proof-of-concept for expressing design tokens as CSS custom properties.</span>
+          <mark class="badge mis-2 flex-shrink-0 bg-green-30t text-green">Complete</mark>
         </p>
-        <p>
-          <mark class="badge">Complete</mark> Release <a href="https://github.com/CityOfNewYork/patterns-cli/releases/tag/v1.0.0">v1 of the Patterns CLI</a>. v1 culminated a long effort to standardize the way our pattern libraries were created. We went from desperate NPM scripts and configurations to a standard set of packages and tools for building and maintaining patterns for different products and audiences. This development period was a heavy focus on developer tooling and support while also beginning to involve designers in the process of contributing.
+        <p class="flex items-center justify-between border-b py-2 border-grey-20t mb-0">
+          <span>Refine Module Accessibility. Work with MOPD to document and address module issues.</span>
+          <mark class="badge mis-2 flex-shrink-0 bg-blue-20t text-blue">On-going</mark>
+        </p>
+        <p class="flex items-center justify-between border-b py-2 border-grey-20t mb-0">
+          <span>
+            <a target="_blank" href="https://www.figma.com/file/jpvfMN4UETOvjQG9EJoH4n/Patterns-Architecture?node-id=0%3A1">Draft architecture</a> for additional shared pattern modules.
+          </span>
+          <mark class="badge mis-2 flex-shrink-0 bg-green-30t text-green">Complete</mark>
+        </p>
+        <p class="flex items-center justify-between border-b py-2 border-grey-20t mb-0">
+          <span>Release <a target="_blank" href="https://github.com/NYCOpportunity/pattern-navigation">Navigation Pattern</a>.</span>
+          <mark class="badge mis-2 flex-shrink-0 bg-green-30t text-green">Complete</mark>
+        </p>
+        <p class="flex items-center justify-between border-b py-2 border-grey-20t mb-0">
+          <span>Release <a target="_blank" href="https://github.com/NYCOpportunity/pattern-modal">Modal Pattern</a>.</span>
+          <mark class="badge mis-2 flex-shrink-0 bg-green-30t text-green">Complete</mark>
+        </p>
+        <p class="flex items-center justify-between border-b py-2 border-grey-20t mb-0">
+          <span>Release <a target="_blank" href="https://github.com/NYCOpportunity/pattern-menu">Menu Pattern</a>.</span>
+          <mark class="badge mis-2 flex-shrink-0 bg-green-30t text-green">Complete</mark>
+        </p>
+        <p class="flex items-center justify-between border-b py-2 border-grey-20t mb-0">
+          <span>Release <a target="_blank" href="https://github.com/NYCOpportunity/pattern-attribution">Attribution Pattern</a>.</span>
+          <mark class="badge mis-2 flex-shrink-0 bg-green-30t text-green">Complete</mark>
+        </p>
+        <p class="flex items-center justify-between border-b py-2 border-grey-20t mb-0">
+          <span>Move to releasing shared pattern modules. Continue to support integrations and contributions.</span>
+          <mark class="badge mis-2 flex-shrink-0 bg-blue-20t text-blue">On-going</mark>
+        </p>
+        <h3 id="2020">2020</h3>
+        <p class="flex items-center justify-between border-b border-t py-2 border-grey-20t mb-0">
+          <span>Release <a target="_blank" href="https://github.com/CityOfNewYork/patterns-cli/releases/tag/v1.0.0">v1 of the Patterns CLI</a>. v1 culminated a long effort to standardize the way our pattern libraries were created. We went from desperate NPM scripts and configurations to a standard set of packages and tools for building and maintaining patterns for different products and audiences. This development period was a heavy focus on developer tooling and support while also beginning to involve designers in the process of contributing.</span>
+          <mark class="badge mis-2 flex-shrink-0 bg-green-30t text-green">Complete</mark>
         </p>
       </div>
     </section>
     <div class="mx-auto text-center py-8">
-      <p>Last updated November 9, 2021</p>
+      <p>Last updated April 7, 2022</p>
     </div>
   </main>
   <footer class="o-footer color-dark-background border-navy-70t">
@@ -183,14 +239,15 @@
           <p>NYC Opportunity is the <a href='http://nyc.gov/opportunity'>New York City Mayor's Office for Economic Opportunity</a>. We are committed to sharing open source software that we use in our products. Feel free to ask questions and share feedback. Follow @nycopportunity on&nbsp;<a href='https://twitter.com/NYCOpportunity' target='_blank' rel='nofollow noopener'>Twitter</a>,&nbsp;<a href='https://www.facebook.com/NYCOpportunity' target='_blank' rel='nofollow noopener'>Facebook</a>,&nbsp;<a href='https://medium.com/@nycopportunity' target='_blank' rel='nofollow noopener'>Medium</a>,&nbsp;<a href='https://github.com/NYCOpportunity' target='_blank' rel='nofollow noopener'>github.com/NYCOpportunity</a>, and on&nbsp;<a href='https://github.com/orgs/CityOfNewYork/teams/nycopportunity' target='_blank' rel='nofollow noopener' title='Viewable by @CityOfNewYork members.'>github.com/CityOfNewYork</a>.</p>
         </div>
         <div class="desktop:text-end">
-          <small>© City of New York, 2021 All Rights Reserved.
+          <small>© City of New York, 2022 All Rights Reserved.
             <br>NYC is a trademark and service mark of the City of New York.
           </small>
         </div>
       </div>
     </div>
   </footer>
-  <script src="https://nycopportunity.github.io/patterns-framework/js/default.js"></script>
+  <script src="/js/default.js"></script>
+  <script src="/reload/reload.js"></script>
 </body>
 
 </html>

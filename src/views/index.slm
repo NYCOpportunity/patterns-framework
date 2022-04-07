@@ -1,11 +1,20 @@
 = extend('/slm/layouts/default')
 
 = content('main')
-  section class='layout-content px-2 tablet:px-3 pt-8'
+  nav class='sticky top-0 p-2 bg-white text-center z-10'
+    a class='mx-1' href='#readme' Readme
+    a class='mx-1' href='#core' Core Modules
+    a class='mx-1' href='#pinned' Pinned Modules
+    a class='mx-1' href='#plugins' Plugins
+    a class='mx-1' href='#components' Components
+    a class='mx-1' href='#projects' Projects
+    a class='mx-1' href='#roadmap' Roadmap
+
+  section class='layout-content px-2 tablet:px-3 pt-8' id='readme'
     div class='mx-auto'
       == this.include('../README.md')
 
-  section class='layout-wrap mx-auto px-2 tablet:px-3 pt-8'
+  section class='layout-wrap mx-auto px-2 tablet:px-3 pt-8' id='core'
     div class='text-center mb-3'
       h2 The Patterns Framework Core Modules
 
@@ -13,28 +22,35 @@
 
     nyco-repo-archive data-archive='core' class='grid tablet:grid-cols-2 gap-3 mb-6'
 
-    div class='text-center mb-3'
+    div class='text-center mb-3 pt-8' id='pinned'
       h2 Pinned Modules
 
       p These modules provide support for the integration of the patterns framework in developer team projects.
 
     nyco-repo-archive data-archive='pinned' class='grid tablet:grid-cols-2 gap-3 mb-6'
 
-    div class='text-center mb-3'
+    div class='text-center mb-3 pt-8' id='plugins'
+      h2 Patterns CLI Plugins
+
+      p These modules extend the functionality of the <a target='_blank' href='https://github.com/CityOfNewYork/patterns-cli#custom-commands'>Patterns CLI via the custom commands API</a>.
+
+    nyco-repo-archive data-archive='plugins' class='grid tablet:grid-cols-2 gap-3 mb-6'
+
+    div class='text-center mb-3 pt-8' id='components'
       h2 UI Pattern Components
 
       p These reusable user interface (UI) components can be implemented in different projects.
 
     nyco-repo-archive data-archive='modules' class='grid tablet:grid-cols-2 gap-3 mb-6'
 
-    div class='text-center mb-3'
+    div class='text-center mb-3 pt-8' id='projects'
       h2 Pattern Libraries and Projects
 
       p These sites and libraries have been built using various modules in the NYCO Patterns Framework.
 
     nyco-repo-archive data-archive='libraries' class='grid tablet:grid-cols-2 gap-3 mb-6'
 
-  section class='layout-content px-2 tablet:px-3 pt-8'
+  section class='layout-content px-2 tablet:px-3 pt-8' id='roadmap'
     div class='mx-auto'
       h2 Roadmap
 

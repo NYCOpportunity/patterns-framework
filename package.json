@@ -12,7 +12,8 @@
     "version": "npm run default && git add .",
     "prepublishOnly": "git push && git push --tags",
     "ghpages": "npm run default && cross-env NODE_ENV=production pttrn publish",
-    "default": "cross-env NODE_ENV=production pttrn"
+    "default": "cross-env NODE_ENV=production pttrn",
+    "meta": "pttrn meta"
   },
   "devDependencies": {
     "@nycopportunity/patterns": "^2.6.14",

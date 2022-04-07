@@ -41,7 +41,7 @@ By using patterns we can strive toward "making the right thing to do the easiest
 Scaffold your own library or project by running the following command.
 
 ```shell
-npx @nycopportunity/pttrn scaffold && npm install && NODE_ENV=development pttrn && npm start
+npx @nycopportunity/pttrn scaffold && npm i && npx pttrn build && npm start
 ```
 
 This will install the [Patterns Command Line Interface](https://github.com/cityofnewyork/patterns-cli) described below, scaffold a new static library project, and start the development server.
