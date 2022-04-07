@@ -75,7 +75,7 @@ html lang='en'
           div class='pb-4 desktop:pl-4 desktop:flex justify-end items-center'
             nav class='o-footer__inline-nav'
               a href='https://github.com/CityOfNewYork/patterns-cli' Patterns CLI
-              a href='https://github.com/NYCOpportunity/pattern-framework' Patterns Framework Repository
+              a href='https://github.com/NYCOpportunity/patterns-framework' Patterns Framework Repository
 
         div class='desktop:grid desktop:grid-cols-2'
           div
