@@ -5,23 +5,23 @@
   <meta charset="utf-8" />
   <meta content="IE=edge" http-equiv="X-UA-Compatible" />
   <meta content="width=device-width, initial-scale=1" name="viewport" />
-  <link href="https://nycopportunity.github.io/patterns-framework/svg/pttrn-favicon.svg" rel="icon" type="image/svg+xml" />
+  <link href="/svg/pttrn-favicon.svg" rel="icon" type="image/svg+xml" />
   <title>NYC Opportunity UI Patterns Framework</title>
   <meta content="NYC Opportunity UI Patterns Framework" name="title" />
   <meta content="The framework is a collection of tools and principles used to make creating pattern libraries fun for developers, transparent for teams, and sustainable beyond the lifecycle of digital products." name="description" />
   <meta content="website" property="og:type" />
-  <meta content="https://nycopportunity.github.io/patterns-framework" property="og:url" />
+  <meta content="" property="og:url" />
   <meta content="NYC Opportunity UI Patterns Framework" property="og:title" />
   <meta content="The framework is a collection of tools and principles used to make creating pattern libraries fun for developers, transparent for teams, and sustainable beyond the lifecycle of digital products." property="og:description" />
-  <meta content="https://nycopportunity.github.io/patterns-framework/img/open-graph.png" property="og:image" />
+  <meta content="/img/open-graph.png" property="og:image" />
   <meta content="summary_large_image" property="twitter:card" />
-  <meta content="https://nycopportunity.github.io/patterns-framework" property="twitter:url" />
+  <meta content="" property="twitter:url" />
   <meta content="NYC Opportunity UI Patterns Framework" property="twitter:title" />
   <meta content="The framework is a collection of tools and principles used to make creating pattern libraries fun for developers, transparent for teams, and sustainable beyond the lifecycle of digital products." property="twitter:description" />
-  <meta content="https://nycopportunity.github.io/patterns-framework/img/open-graph.png" property="twitter:image" />
+  <meta content="/img/open-graph.png" property="twitter:image" />
   <link href="https://fonts.gstatic.com" rel="preconnect" />
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,400;1,700&amp;amp;display=swap" rel="stylesheet" />
-  <link href="https://nycopportunity.github.io/patterns-framework/css/default.css" rel="stylesheet" />
+  <link href="/css/default.css" rel="stylesheet" />
 </head>
 
 <body class="bg-red-30t">
@@ -46,14 +46,16 @@
     </div>
   </header>
   <main class="color-light-background">
-    <nav class="sticky top-0 p-2 bg-white text-center z-10">
+    <nav aria-label="Main Navigation" class="sticky top-0 p-2 bg-white text-center z-10">
       <a class="mx-1" href="#readme">Readme</a>
       <a class="mx-1" href="#core">Core Modules</a>
       <a class="mx-1" href="#pinned">Pinned Modules</a>
-      <a class="mx-1" href="#plugins">Plugins</a>
+      <a class="mx-1" href="#plugins">CLI Plugins</a>
       <a class="mx-1" href="#components">Components</a>
-      <a class="mx-1" href="#projects">Projects</a>
+      <a class="mx-1" href="#projects">Libraries and Projects</a>
       <a class="mx-1" href="#roadmap">Roadmap</a>
+      <a class="mx-1" href="#support">Support</a>
+      <a class="mx-1" href="#nyc">NYC UI</a>
     </nav>
     <section class="layout-content px-2 tablet:px-3 pt-8" id="readme">
       <div class="mx-auto">
@@ -138,9 +140,16 @@
       </div>
       <nyco-repo-archive class="grid tablet:grid-cols-2 gap-3 mb-6" data-archive="libraries"></nyco-repo-archive>
     </section>
-    <section class="layout-content px-2 tablet:px-3 pt-8" id="roadmap">
+    <section class="layout-content px-2 tablet:px-3 pt-8 mb-6" id="roadmap">
       <div class="mx-auto">
-        <h2>Roadmap</h2>
+        <h2>
+          <a href="#roadmap">
+            <svg class="icon-ui text-blue" title="Roadmap Icon">
+              <use href="#feather-map"></use>
+            </svg>
+            <span class="sr-only">Link to roadmap</span>
+          </a>Roadmap
+        </h2>
         <h3 id="2022">2022</h3>
         <p class="flex items-center justify-between border-b border-t py-2 border-grey-20t mb-0">
           <span>Follow design token specification/standards determined by the <a target="_blank" href="https://github.com/design-tokens/community-group">Design Tokens W3C Community Group</a>.</span>
@@ -212,8 +221,33 @@
         </p>
       </div>
     </section>
+    <section class="layout-content px-2 tablet:px-3 pt-8 mb-6" id="support">
+      <div class="mx-auto">
+        <h2>
+          <a href="#support">
+            <svg class="icon-ui text-blue" title="Help Icon">
+              <use href="#feather-help-circle"></use>
+            </svg>
+            <span class="sr-only">Link to support</span>
+          </a>Support
+        </h2>
+        <h3 id="getting-help-how-do-i-do-the-thing">Getting Help (how do I do the thing?)</h3>
+        <p>First, check out the documentation for the module you have a question about. They are all GitHub repositories with readme files. If the documentation isn’t sufficient create a new issue or reach out to <a href="mailto:&#x70;&#x72;&#x6f;&#x64;&#117;&#x63;&#x74;&#115;&#64;&#110;&#x79;&#x63;&#111;&#112;&#x70;&#111;&#114;&#116;&#117;&#110;&#x69;&#x74;&#x79;&#x2e;&#x6e;&#x79;&#x63;&#x2e;&#103;&#x6f;&#x76;">&#x70;&#x72;&#x6f;&#x64;&#117;&#x63;&#x74;&#115;&#64;&#110;&#x79;&#x63;&#111;&#112;&#x70;&#111;&#114;&#116;&#117;&#110;&#x69;&#x74;&#x79;&#x2e;&#x6e;&#x79;&#x63;&#x2e;&#103;&#x6f;&#x76;</a>.</p>
+        <h3 id="contributing-how-to-i-add-the-thing">Contributing (how to I add the thing?)</h3>
+        <p>We manage planning and a backlog for all of the modules in the framework using Jira. Reach out to <a href="mailto:&#112;&#114;&#x6f;&#x64;&#x75;&#99;&#116;&#115;&#64;&#x6e;&#121;&#x63;&#x6f;&#112;&#x70;&#111;&#114;&#116;&#x75;&#110;&#105;&#x74;&#121;&#46;&#x6e;&#x79;&#99;&#46;&#103;&#111;&#118;">&#112;&#114;&#x6f;&#x64;&#x75;&#99;&#116;&#115;&#64;&#x6e;&#121;&#x63;&#x6f;&#112;&#x70;&#111;&#114;&#116;&#x75;&#110;&#105;&#x74;&#121;&#46;&#x6e;&#x79;&#99;&#46;&#103;&#111;&#118;</a> if you are interested in contributing.</p>
+      </div>
+    </section>
+    <section class="layout-wrap mx-auto px-2 tablet:px-3 pt-8" id="nyc">
+      <div class="layout-content mb-3">
+        <div class="mx-auto">
+          <h2 class="text-center">New York City UI Repositories</h2>
+          <p>We draw inspiraction from the NYC Civic Tech community. This is a non-exaustive list of other open-source NYC user-interface resources. If you know of an open-source resource that should be featured please let us know at products@nycopportunity.nyc.gov.</p>
+        </div>
+      </div>
+      <nyco-repo-archive class="grid tablet:grid-cols-2 gap-3 mb-6" data-archive="nyc"></nyco-repo-archive>
+    </section>
     <div class="mx-auto text-center py-8">
-      <p>Last updated April 7, 2022</p>
+      <p>Last updated April 8, 2022</p>
     </div>
   </main>
   <footer class="o-footer color-dark-background border-navy-70t">
@@ -228,7 +262,7 @@
           </a>
         </div>
         <div class="pb-4 desktop:pl-4 desktop:flex justify-end items-center">
-          <nav class="o-footer__inline-nav">
+          <nav aria-label="Footer Navigation" class="o-footer__inline-nav">
             <a href="https://github.com/CityOfNewYork/patterns-cli">Patterns CLI</a>
             <a href="https://github.com/NYCOpportunity/patterns-framework">Patterns Framework Repository</a>
           </nav>
@@ -246,7 +280,8 @@
       </div>
     </div>
   </footer>
-  <script src="https://nycopportunity.github.io/patterns-framework/js/default.js"></script>
+  <script src="/js/default.js"></script>
+  <script src="/reload/reload.js"></script>
 </body>
 
 </html>

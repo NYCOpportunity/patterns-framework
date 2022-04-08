@@ -45,7 +45,7 @@ class NycoRepoArchive extends Tonic {
               <small class="text-blue font-normal inline-flex items-center">
                 <svg aria-hidden="true" class="icon-ui mie-1">
                   <use xlink:href="#feather-github"></use>
-                </svg>${repo.organization} /
+                </svg>${repo.organization || repo.owner} /
               </small> <br> ${repo.name}
             </h2>
 
@@ -56,7 +56,7 @@ class NycoRepoArchive extends Tonic {
 
           <dl class="c-card__inline-description-list">
             <dt>Language</dt>
-            <dd>${String(repo.language)}</dd>
+            <dd>${String(repo.language || 'N/A')}</dd>
 
             <dt>Stars</dt>
             <dd>${String(repo.stargazers_count)}</dd>
@@ -66,7 +66,7 @@ class NycoRepoArchive extends Tonic {
           </dl>
 
           <div>
-            <p>${String(repo.description)}</p>
+            <p>${(repo.description) ? String(repo.description) : 'Description is unavailable. Click to view the readme for details.'}</p>
           </div>
 
           <a class="c-card__cta" href="${repo.url}" target="_blank"></a>

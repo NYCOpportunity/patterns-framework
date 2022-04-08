@@ -73,7 +73,7 @@ html lang='en'
                 | The Mayor's Office for Economic Opportunity
 
           div class='pb-4 desktop:pl-4 desktop:flex justify-end items-center'
-            nav class='o-footer__inline-nav'
+            nav class='o-footer__inline-nav' aria-label='Footer Navigation'
               a href='https://github.com/CityOfNewYork/patterns-cli' Patterns CLI
               a href='https://github.com/NYCOpportunity/patterns-framework' Patterns Framework Repository
 

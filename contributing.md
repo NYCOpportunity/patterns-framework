@@ -1,4 +1,4 @@
-# NYCO Loves Open-source
+# NYCO User Interface (UI) Patterns Framework
 
 This site is built with the [NYCO Patterns CLI](https://github.com/CityOfNewYork/patterns-cli) and styled using the [NYCO Patterns](https://cityofnewyork.github.io/nyco-patterns). The [Tonic Component Framework](https://tonicframework.dev/) renders the list of repositories using meta data retrieved from the [GitHub REST API](https://docs.github.com/en/rest).
 
@@ -11,7 +11,7 @@ Clone the repository and run `npm install`. You will need a GitHub Personal Acce
 Commands are stored in the [package.json](package.json) file and can be run using NPM. Commands follow this pattern.
 
 ```shell
-$ npm run {{ command }}
+npm run {{ command }}
 ```
 
 Below is a description of the available commands.

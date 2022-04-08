@@ -40,6 +40,14 @@ let LISTS = {
     'generationnyc-patterns',
     'screeningapi-docs',
     'mental-health-for-all'
+  ],
+  'nyc': [
+    'USWDS-generator',
+    'react-uswds',
+    'nyc-core-framework',
+    'labs-ui',
+    'nyc-planning-style-guide',
+    'nyc-lib',
   ]
 };
 
@@ -52,16 +60,18 @@ const write = async (path = 'dist/data') => {
   try {
     let lists = Object.keys(LISTS);
 
+    cnsl.describe(`${alerts.info} Building collections.`);
+
     for (let i = 0; i < lists.length; i++) {
       let l = LISTS[lists[i]];
 
       let listOutput = OUTPUT.filter(o => {
-        return l.includes(o.full_name.split('/')[1])
+        return l.includes(o.full_name.split('/')[1]);
       });
 
       await fs.writeFileSync(`${path}/${lists[i]}.json`, JSON.stringify(listOutput));
 
-      cnsl.success(`Output ${path}/${lists[i]}.json was made.`);
+      cnsl.success(`Output ${alerts.str.path(`${path}/${lists[i]}.json`)} was made.`);
     }
   } catch (error) {
     cnsl.error(error);
@@ -76,7 +86,7 @@ const write = async (path = 'dist/data') => {
  */
 const main = async (req, options) => {
   try {
-    cnsl.describe(`${alerts.info} Retrieving ${alerts.str.string(options.org)} repository information.`);
+    cnsl.describe(`${alerts.info} Retrieving ${alerts.str.string(options.org || options.username)} repository information.`);
 
     options.headers = {
       authorization: `token ${GITHUB_PERSONAL_ACCESS_TOKEN}`
@@ -91,7 +101,7 @@ const main = async (req, options) => {
     let result = await request(req, options);
 
     // cnsl.describe(`Response sample and schema:
-    //   ${alerts.str.string(JSON.stringify(result.data[0], undefined, 2))}`);
+      // ${alerts.str.string(JSON.stringify(result.data[0], undefined, 2))}`);
 
     for (let index = 0; index < result.data.length; index++) {
       const item = result.data[index];
@@ -106,7 +116,8 @@ const main = async (req, options) => {
         'url': item.html_url,
         'language': item.language,
         'stargazers_count': item.stargazers_count,
-        'forks': item.forks
+        'forks': item.forks,
+        'owner': item.owner.login
       });
     }
 
@@ -125,17 +136,58 @@ const run = async () => {
   try {
     GITHUB_PERSONAL_ACCESS_TOKEN = await fs.readFileSync('.gh-token');
 
-    await main('GET /orgs/{org}/teams/{team_slug}/repos', {
+    await main('GET /orgs/{org}/repos', {
       org: 'CityOfNewYork',
-      team_slug: 'NYCOpportunity',
       type: 'public',
-      per_page: 999999
+      per_page: 100,
+      page: 1
+    });
+
+    await main('GET /orgs/{org}/repos', {
+      org: 'CityOfNewYork',
+      type: 'public',
+      per_page: 100,
+      page: 2
     });
 
     await main('GET /orgs/{org}/repos', {
       org: 'NYCOpportunity',
       type: 'public',
-      per_page: 999999
+      per_page: 100
+    });
+
+    await main('GET /users/{username}/repos', {
+      username: 'timkeane',
+      type: 'public',
+      per_page: 100
+    });
+
+    await main('GET /orgs/{org}/repos', {
+      org: 'NYCPlanning',
+      type: 'public',
+      per_page: 100,
+      page: 1
+    });
+
+    await main('GET /orgs/{org}/repos', {
+      org: 'NYCPlanning',
+      type: 'public',
+      per_page: 100,
+      page: 2
+    });
+
+    await main('GET /orgs/{org}/repos', {
+      org: 'NYCPlanning',
+      type: 'public',
+      per_page: 100,
+      page: 3
+    });
+
+    await main('GET /orgs/{org}/repos', {
+      org: 'nyc-cto',
+      type: 'public',
+      per_page: 100,
+      page: 1
     });
 
     await write();

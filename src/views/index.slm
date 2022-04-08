@@ -1,14 +1,16 @@
 = extend('/slm/layouts/default')
 
 = content('main')
-  nav class='sticky top-0 p-2 bg-white text-center z-10'
+  nav class='sticky top-0 p-2 bg-white text-center z-10' aria-label='Main Navigation'
     a class='mx-1' href='#readme' Readme
     a class='mx-1' href='#core' Core Modules
     a class='mx-1' href='#pinned' Pinned Modules
-    a class='mx-1' href='#plugins' Plugins
+    a class='mx-1' href='#plugins' CLI Plugins
     a class='mx-1' href='#components' Components
-    a class='mx-1' href='#projects' Projects
+    a class='mx-1' href='#projects' Libraries and Projects
     a class='mx-1' href='#roadmap' Roadmap
+    a class='mx-1' href='#support' Support
+    a class='mx-1' href='#nyc' NYC UI
 
   section class='layout-content px-2 tablet:px-3 pt-8' id='readme'
     div class='mx-auto'
@@ -50,10 +52,39 @@
 
     nyco-repo-archive data-archive='libraries' class='grid tablet:grid-cols-2 gap-3 mb-6'
 
-  section class='layout-content px-2 tablet:px-3 pt-8' id='roadmap'
+  section class='layout-content px-2 tablet:px-3 pt-8 mb-6' id='roadmap'
     div class='mx-auto'
-      h2 Roadmap
+      h2
+        a href='#roadmap'
+          svg class='icon-ui text-blue' title='Roadmap Icon'
+            use href='#feather-map'
+
+          span class='sr-only' Link to roadmap
+
+        | Roadmap
 
       == this.include('../roadmap.md')
+
+  section class='layout-content px-2 tablet:px-3 pt-8 mb-6' id='support'
+    div class='mx-auto'
+      h2
+        a href='#support'
+          svg class='icon-ui text-blue' title='Help Icon'
+            use href='#feather-help-circle'
+
+          span class='sr-only' Link to support
+
+        | Support
+
+      == this.include('../support.md')
+
+  section class='layout-wrap mx-auto px-2 tablet:px-3 pt-8' id='nyc'
+    div class='layout-content mb-3'
+      div class='mx-auto'
+        h2 class='text-center' New York City UI Repositories
+
+        p We draw inspiraction from the NYC Civic Tech community. This is a non-exaustive list of other open-source NYC user-interface resources. If you know of an open-source resource that should be featured please let us know at products@nycopportunity.nyc.gov.
+
+    nyco-repo-archive data-archive='nyc' class='grid tablet:grid-cols-2 gap-3 mb-6'
 
 = content('scripts')
