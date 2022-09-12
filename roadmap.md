@@ -1,6 +1,16 @@
 ### 2022
 
 <p class="flex items-center justify-between border-b border-t py-2 border-grey-20t mb-0">
+  <span>A shared UX pattern and UI library collection that will increment into the adoption of the <a href="https://designsystem.digital.gov/" target="_blank">USWDS</a>.</span>
+  <mark class="badge mis-2 flex-shrink-0 bg-blue-20t text-blue">In-progress</mark>
+</p>
+
+<p class="flex items-center justify-between border-b py-2 border-grey-20t mb-0">
+  <span><a target="_blank" href="https://github.com/NYCOpportunity/pattern-elements">Elements</a>; one repository with all of the elements. Can be customized by CSS Custom Properties / Design Tokens for a particular product.</span>
+  <mark class="badge mis-2 flex-shrink-0 bg-blue-20t text-blue">In-progress</mark>
+</p>
+
+<p class="flex items-center justify-between border-b py-2 border-grey-20t mb-0">
   <span>Follow design token specification/standards determined by the <a target="_blank" href="https://github.com/design-tokens/community-group">Design Tokens W3C Community Group</a>.</span>
   <mark class="badge mis-2 flex-shrink-0">TBD</mark>
 </p>
@@ -13,16 +23,6 @@
 <p class="flex items-center justify-between border-b py-2 border-grey-20t mb-0">
   <span>Explore <a target="_blank" href="https://github.com/builderio/mitosis">Mitosis</a> as shared component specification.</span>
   <mark class="badge mis-2 flex-shrink-0">TBD</mark>
-</p>
-
-<p class="flex items-center justify-between border-b py-2 border-grey-20t mb-0">
-  <span>Update <a target="_blank" href="https://github.com/CityOfNewYork/ACCESS-NYC-PATTERNS">ACCESS NYC Patterns</a> with v1 of the Patterns Framework (CLI, Scripts, etc.).</span>
-  <mark class="badge mis-2 flex-shrink-0 bg-blue-20t text-blue">In-progress</mark>
-</p>
-
-<p class="flex items-center justify-between border-b py-2 border-grey-20t mb-0">
-  <span><a target="_blank" href="https://github.com/NYCOpportunity/pattern-elements">Elements</a>; one repository with all of the elements. Can be customized by CSS Custom Properties / Design Tokens for a particular product.</span>
-  <mark class="badge mis-2 flex-shrink-0 bg-blue-20t text-blue">In-progress</mark>
 </p>
 
 ### 2021
