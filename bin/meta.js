@@ -26,13 +26,16 @@ let LISTS = {
     'patterns-plugin-twig'
   ],
   'modules': [
-    'pattern-modal',
+    'pattern-elements',
+    'pattern-typography',
+    'pattern-application-header',
     'pattern-navigation',
     'pattern-menu',
     'pattern-attribution',
-    'pattern-elements'
+    'pattern-modal'
   ],
   'libraries': [
+    'standard',
     'working-nyc-patterns',
     'ACCESS-NYC-PATTERNS',
     'nyco-patterns',

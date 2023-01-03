@@ -1,13 +1,15 @@
-### 2022
+### 2023
 
-<p class="flex items-center justify-between border-b border-t py-2 border-grey-20t mb-0">
-  <span>A shared UX pattern and UI library collection that will increment into the adoption of the <a href="https://designsystem.digital.gov/" target="_blank">USWDS</a>.</span>
-  <mark class="badge mis-2 flex-shrink-0 bg-blue-20t text-blue">In-progress</mark>
+<p class="flex items-center justify-between border-b py-2 border-grey-20t mb-0">
+  <span><a target="_blank" href="https://nycopportunity.github.io/standard">Opportunity Standard</a>; A shared UX pattern and UI library collection that will increment into the adoption of the <a href="https://designsystem.digital.gov/" target="_blank">USWDS</a>.</span>
+  <mark class="badge mis-2 flex-shrink-0 bg-green-30t text-green">Complete</mark>
 </p>
+
+### 2022
 
 <p class="flex items-center justify-between border-b py-2 border-grey-20t mb-0">
   <span><a target="_blank" href="https://github.com/NYCOpportunity/pattern-elements">Elements</a>; one repository with all of the elements. Can be customized by CSS Custom Properties / Design Tokens for a particular product.</span>
-  <mark class="badge mis-2 flex-shrink-0 bg-blue-20t text-blue">In-progress</mark>
+  <mark class="badge mis-2 flex-shrink-0 bg-green-30t text-green">Complete</mark>
 </p>
 
 <p class="flex items-center justify-between border-b py-2 border-grey-20t mb-0">

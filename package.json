@@ -1,6 +1,6 @@
 {
   "name": "@nycopportunity/patterns-framework",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "The framework is a collection of tools and principles used to make creating pattern libraries fun for developers, transparent for teams, and sustainable beyond the lifecycle of digital products.",
   "license": "GPL-3.0+",
   "repository": {
@@ -23,5 +23,8 @@
     "animate.scss": "0.0.6",
     "http-proxy-agent": "^5.0.0",
     "octokit": "^1.7.0"
+  },
+  "dependencies": {
+    "@nycopportunity/pattern-elements": "file:../../nycopportunity/pattern-elements"
   }
 }
